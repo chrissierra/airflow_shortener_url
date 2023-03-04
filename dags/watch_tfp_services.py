@@ -5,14 +5,43 @@ from datetime import datetime
 
 import requests
 from requests.auth import HTTPBasicAuth
+
+
+
+
+from smtplib import SMTP
+from my_email import email_mine , password_mine
+from email_addresses import email1, email2
+
+
+
 def send_simple_message():
-	return requests.post(
-		"https://api.mailgun.net/v3/sandbox466225c1bf4d491fb4672e2a1fd216fa.mailgun.org/messages",
-		auth=("api", "a15189eb3bd43903c778d4f059e4aeb9-15b35dee-8af6ddd9"),
-		data={"from": "Mailgun Sandbox <postmaster@sandbox466225c1bf4d491fb4672e2a1fd216fa.mailgun.org>",
-			"to": "christopher sierra <christopher.sierra@usach.cl>",
-			"subject": "Hello christopher sierra",
-			"text": "Congratulations christopher sierra, you just sent an email with Mailgun!  You are truly awesome!"})
+    # Creating the respective object along with the gmail login and port number
+    smtp_port = SMTP("smtp.gmail.com", 587)
+
+    # Establishing a connection to the SMTP server with Transport Layer Security (TLS) mode
+    smtp_port.ehlo()
+
+    # Informing the client to establish a secure connection, either to a TLS or SSL
+    smtp_port.starttls()
+
+    # Logging into your account
+    smtp_port.login('shortener.fshp@gmail.com' , 'ubhdaupzpqdbsoby')
+
+    # Creating the contents of the email
+    subject = "Hello"
+    body = "Email Automation Project!"
+    final_message = f"Subject: {subject} \n \n {body}"
+
+    # Creating the list of email addresses
+    address_list = ['christopher.sierra@usach.cl', 'administrador@sister.cl']
+    smtp_port.sendmail('shortener.fshp@gmail.com' , address_list, final_message)
+    print("Email Sent")
+    smtp_port.quit()
+
+
+
+
 
 
 
