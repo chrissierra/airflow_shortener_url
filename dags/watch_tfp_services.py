@@ -10,8 +10,7 @@ from requests.auth import HTTPBasicAuth
 
 
 from smtplib import SMTP
-from my_email import email_mine , password_mine
-from email_addresses import email1, email2
+
 
 
 
