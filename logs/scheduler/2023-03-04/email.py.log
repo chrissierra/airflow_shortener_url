@@ -11111,3 +11111,38 @@
 [2023-03-04T14:51:18.250+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:51:18.246+0000] {dag.py:2690} INFO - Sync 1 DAGs
 [2023-03-04T14:51:18.398+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:51:18.397+0000] {dag.py:3441} INFO - Setting next_dagrun for email_tutorial to None, run_after=None
 [2023-03-04T14:51:18.470+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/email.py took 0.478 seconds
+[2023-03-04T14:51:49.213+0000] {processor.py:153} INFO - Started process (PID=60316) to work on /opt/airflow/dags/email.py
+[2023-03-04T14:51:49.233+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/email.py for tasks to queue
+[2023-03-04T14:51:49.235+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:51:49.235+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/email.py
+[2023-03-04T14:51:49.355+0000] {processor.py:753} INFO - DAG(s) dict_keys(['email_tutorial']) retrieved from /opt/airflow/dags/email.py
+[2023-03-04T14:51:49.556+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:51:49.556+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-03-04T14:51:49.779+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:51:49.779+0000] {dag.py:3441} INFO - Setting next_dagrun for email_tutorial to None, run_after=None
+[2023-03-04T14:51:50.054+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/email.py took 0.883 seconds
+[2023-03-04T14:52:20.516+0000] {processor.py:153} INFO - Started process (PID=60333) to work on /opt/airflow/dags/email.py
+[2023-03-04T14:52:20.520+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/email.py for tasks to queue
+[2023-03-04T14:52:20.522+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:52:20.521+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/email.py
+[2023-03-04T14:52:20.623+0000] {processor.py:753} INFO - DAG(s) dict_keys(['email_tutorial']) retrieved from /opt/airflow/dags/email.py
+[2023-03-04T14:52:21.012+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:52:21.012+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-03-04T14:52:21.276+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:52:21.270+0000] {dag.py:3441} INFO - Setting next_dagrun for email_tutorial to None, run_after=None
+[2023-03-04T14:52:21.442+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/email.py took 0.954 seconds
+[2023-03-04T14:52:51.839+0000] {processor.py:153} INFO - Started process (PID=60357) to work on /opt/airflow/dags/email.py
+[2023-03-04T14:52:51.841+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/email.py for tasks to queue
+[2023-03-04T14:52:51.848+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:52:51.848+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/email.py
+[2023-03-04T14:52:51.910+0000] {processor.py:753} INFO - DAG(s) dict_keys(['email_tutorial']) retrieved from /opt/airflow/dags/email.py
+[2023-03-04T14:52:52.071+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:52:52.070+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-03-04T14:52:52.177+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:52:52.177+0000] {dag.py:3441} INFO - Setting next_dagrun for email_tutorial to None, run_after=None
+[2023-03-04T14:52:52.265+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/email.py took 0.456 seconds
+[2023-03-04T14:53:22.814+0000] {processor.py:153} INFO - Started process (PID=60371) to work on /opt/airflow/dags/email.py
+[2023-03-04T14:53:22.834+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/email.py for tasks to queue
+[2023-03-04T14:53:22.836+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:53:22.836+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/email.py
+[2023-03-04T14:53:22.893+0000] {processor.py:753} INFO - DAG(s) dict_keys(['email_tutorial']) retrieved from /opt/airflow/dags/email.py
+[2023-03-04T14:53:22.962+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:53:22.961+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-03-04T14:53:23.076+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:53:23.076+0000] {dag.py:3441} INFO - Setting next_dagrun for email_tutorial to None, run_after=None
+[2023-03-04T14:53:23.218+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/email.py took 0.407 seconds
+[2023-03-04T14:53:53.990+0000] {processor.py:153} INFO - Started process (PID=60395) to work on /opt/airflow/dags/email.py
+[2023-03-04T14:53:53.991+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/email.py for tasks to queue
+[2023-03-04T14:53:53.992+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:53:53.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/email.py
+[2023-03-04T14:53:54.050+0000] {processor.py:753} INFO - DAG(s) dict_keys(['email_tutorial']) retrieved from /opt/airflow/dags/email.py
+[2023-03-04T14:53:54.153+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:53:54.153+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-03-04T14:53:54.301+0000] {logging_mixin.py:137} INFO - [2023-03-04T14:53:54.300+0000] {dag.py:3441} INFO - Setting next_dagrun for email_tutorial to None, run_after=None
+[2023-03-04T14:53:54.438+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/email.py took 0.457 seconds
