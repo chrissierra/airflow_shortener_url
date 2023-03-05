@@ -40,9 +40,9 @@ def send_simple_message():
     # Usando body?
     message = """\
     From: watcher@tarjetafashionspark.cl
+    To: watcher@tarjetafashionspark.cl
 
     
-    To: watcher@tarjetafashionspark.cl
     Subject: Hi there
 
     
