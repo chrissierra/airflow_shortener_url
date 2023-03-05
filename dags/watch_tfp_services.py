@@ -31,6 +31,7 @@ def send_simple_message():
     subject = "Hello"
     body = "Email Automation Project!"
     desde = "services@fshp.cl"
+    # Usando body?
     final_message = f"From: {desde} \n \n Subject: {subject} \n \n {body}"
     # Creating the list of email addresses
     address_list = ['christopher.sierra@usach.cl', 'administrador@sister.cl']
