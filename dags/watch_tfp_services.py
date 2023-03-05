@@ -38,7 +38,7 @@ def send_simple_message():
     body = "Email Automation Project!"
     desde = "services@fshp.cl"
     # Usando body?
-    message = """
+    message = """\
     From: watcher@tarjetafashionspark.cl
     Subject: Hi there
 
