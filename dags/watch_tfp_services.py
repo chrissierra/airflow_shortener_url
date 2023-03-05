@@ -28,7 +28,7 @@ def send_simple_message():
     smtp_port.starttls()
     
     password = os.getenv('EMAIL_PASS')
-    print('Password: ' + password)
+    print('Password: ' + str(password))
     # Logging into your account
     smtp_port.login('shortener.fshp@gmail.com' , password)
 
