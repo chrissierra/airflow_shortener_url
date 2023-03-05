@@ -23,9 +23,11 @@ def send_simple_message():
 
     # Informing the client to establish a secure connection, either to a TLS or SSL
     smtp_port.starttls()
-
+    
+    password = os.environ.get('EMAIL_PASS')
+    print('Password: ' + password)
     # Logging into your account
-    smtp_port.login('shortener.fshp@gmail.com' , os.environ.get('EMAIL_PASS'))
+    smtp_port.login('shortener.fshp@gmail.com' , password)
 
     # Creating the contents of the email
     subject = "Hello"
