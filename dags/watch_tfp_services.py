@@ -5,7 +5,7 @@ from datetime import datetime
 
 import requests
 from requests.auth import HTTPBasicAuth
-
+import os
 
 
 
@@ -25,13 +25,13 @@ def send_simple_message():
     smtp_port.starttls()
 
     # Logging into your account
-    smtp_port.login('shortener.fshp@gmail.com' , 'ubhdaupzpqdbsoby')
+    smtp_port.login('shortener.fshp@gmail.com' , os.environ.get('EMAIL_PASS'))
 
     # Creating the contents of the email
     subject = "Hello"
     body = "Email Automation Project!"
-    final_message = f"Subject: {subject} \n \n {body}"
-
+    desde = "services@fshp.cl"
+    final_message = f"From: {desde} \n \n Subject: {subject} \n \n {body}"
     # Creating the list of email addresses
     address_list = ['christopher.sierra@usach.cl', 'administrador@sister.cl']
     smtp_port.sendmail('shortener.fshp@gmail.com' , address_list, final_message)
