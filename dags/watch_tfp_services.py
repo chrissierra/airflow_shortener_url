@@ -39,6 +39,7 @@ def send_simple_message():
     desde = "services@fshp.cl"
     # Usando body?
     message = """
+    From: watcher@tarjetafashionspark.cl
     Subject: Hi there
 
     This message is sent from Python."""
