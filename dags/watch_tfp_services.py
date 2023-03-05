@@ -11,6 +11,9 @@ import os
 
 from smtplib import SMTP
 
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 
@@ -24,7 +27,7 @@ def send_simple_message():
     # Informing the client to establish a secure connection, either to a TLS or SSL
     smtp_port.starttls()
     
-    password = os.environ.get('EMAIL_PASS')
+    password = os.getenv('EMAIL_PASS')
     print('Password: ' + password)
     # Logging into your account
     smtp_port.login('shortener.fshp@gmail.com' , password)
