@@ -38,15 +38,12 @@ def send_simple_message():
     body = "Email Automation Project!"
     desde = "services@fshp.cl"
     # Usando body?
-    message = """\
-    From: watcher@tarjetafashionspark.cl
-    
-    To: watcher@tarjetafashionspark.cl
-    
-    Subject: Hi there
+    message =  """From: From Person <from@fromdomain.com>
+    To: To Person <to@todomain.com>
+    Subject: SMTP e-mail test
 
-    
-    This message is sent from Python."""
+    This is a test e-mail message.
+    """
     # Creating the list of email addresses
     address_list = ['christopher.sierra@usach.cl', 'administrador@sister.cl']
     smtp_port.sendmail('shortener.fshp@gmail.com' , address_list, message)
