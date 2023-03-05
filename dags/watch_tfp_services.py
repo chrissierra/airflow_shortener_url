@@ -51,7 +51,6 @@ def send_simple_message():
     print("Email Sent")
     smtp_port.quit()
 
-    smtp_port.sendm
 
 
 
