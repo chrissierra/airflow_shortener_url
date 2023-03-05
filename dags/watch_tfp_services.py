@@ -40,8 +40,11 @@ def send_simple_message():
     # Usando body?
     message = """\
     From: watcher@tarjetafashionspark.cl
+
+
     Subject: Hi there
 
+    
     This message is sent from Python."""
     # Creating the list of email addresses
     address_list = ['christopher.sierra@usach.cl', 'administrador@sister.cl']
