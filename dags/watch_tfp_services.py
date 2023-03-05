@@ -1,5 +1,6 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.models import Variable
 
 from datetime import datetime
 
@@ -27,7 +28,7 @@ def send_simple_message():
     # Informing the client to establish a secure connection, either to a TLS or SSL
     smtp_port.starttls()
     
-    password = os.getenv('EMAIL_PASS')
+    password = Variable.get("email_pass")
     print('Password: ' + str(password))
     # Logging into your account
     smtp_port.login('shortener.fshp@gmail.com' , password)
