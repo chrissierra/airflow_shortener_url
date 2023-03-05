@@ -30778,3 +30778,165 @@ Traceback (most recent call last):
 airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
 [2023-03-05T14:35:53.678+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
 [2023-03-05T14:35:53.791+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.144 seconds
+[2023-03-05T14:36:24.501+0000] {processor.py:153} INFO - Started process (PID=67836) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:36:24.503+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:36:24.505+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:36:24.504+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:36:24.520+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:36:24.516+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:36:24.521+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:36:24.619+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.124 seconds
+[2023-03-05T14:36:55.386+0000] {processor.py:153} INFO - Started process (PID=67863) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:36:55.394+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:36:55.395+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:36:55.395+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:36:55.411+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:36:55.407+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:36:55.412+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:36:55.501+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.135 seconds
+[2023-03-05T14:37:25.592+0000] {processor.py:153} INFO - Started process (PID=67891) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:37:25.594+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:37:25.595+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:37:25.595+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:37:25.611+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:37:25.607+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:37:25.612+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:37:25.658+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.073 seconds
+[2023-03-05T14:37:56.685+0000] {processor.py:153} INFO - Started process (PID=67918) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:37:56.694+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:37:56.695+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:37:56.695+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:37:56.714+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:37:56.709+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:37:56.715+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:37:56.779+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.101 seconds
+[2023-03-05T14:38:27.734+0000] {processor.py:153} INFO - Started process (PID=67940) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:38:27.736+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:38:27.737+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:38:27.737+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:38:27.752+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:38:27.748+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:38:27.752+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:38:27.824+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.098 seconds
+[2023-03-05T14:38:58.845+0000] {processor.py:153} INFO - Started process (PID=67959) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:38:58.847+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:38:58.849+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:38:58.848+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:38:58.863+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:38:58.859+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:38:58.864+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:38:58.931+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.095 seconds
+[2023-03-05T14:39:29.898+0000] {processor.py:153} INFO - Started process (PID=67986) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:39:29.899+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:39:29.900+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:39:29.900+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:39:29.914+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:39:29.911+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:39:29.915+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:39:29.974+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.084 seconds
+[2023-03-05T14:40:00.866+0000] {processor.py:153} INFO - Started process (PID=68012) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:40:00.870+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:40:00.871+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:40:00.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:40:00.892+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:40:00.885+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:40:00.897+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:40:00.983+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.125 seconds
+[2023-03-05T14:40:32.047+0000] {processor.py:153} INFO - Started process (PID=68040) to work on /opt/airflow/dags/vigia.py
+[2023-03-05T14:40:32.048+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/vigia.py for tasks to queue
+[2023-03-05T14:40:32.050+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:40:32.049+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/vigia.py
+[2023-03-05T14:40:32.063+0000] {logging_mixin.py:137} INFO - [2023-03-05T14:40:32.060+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/vigia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vigia.py", line 38, in <module>
+    start_date=datetime(2022,8,1)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 443, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'python_operator 2' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-03-05T14:40:32.064+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/vigia.py
+[2023-03-05T14:40:32.108+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/vigia.py took 0.068 seconds
