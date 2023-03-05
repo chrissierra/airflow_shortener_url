@@ -40,8 +40,6 @@ def send_simple_message():
     # Usando body?
     message = """\
     From: watcher@tarjetafashionspark.cl
-
-
     Subject: Hi there
 
     
@@ -51,6 +49,8 @@ def send_simple_message():
     smtp_port.sendmail('shortener.fshp@gmail.com' , address_list, message)
     print("Email Sent")
     smtp_port.quit()
+
+    smtp_port.sendm
 
 
 
