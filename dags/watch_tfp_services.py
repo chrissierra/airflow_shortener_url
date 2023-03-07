@@ -17,10 +17,10 @@ def send_email(subject="TFSP: Servicios funcionando adecuadamente", text="Los se
 
 
 
-services_list = ['https://sapim.fppay.com/tfp/app/1.0.0/contents']
+services_list = Variable.get("services_to_watch") # ['https://sapim.fppay.com/tfp/app/1.0.0/contents']
 
 def requesting_services():
-    for url in services_list:
+    for url in services_list.split(','):
         requesting_service(url)
 
 
