@@ -53,7 +53,7 @@ def send_simple_message2():
 def send_simple_message():
 	return requests.post(
 		Variable.get("url_mailgun"),
-		auth=("api", Variable.get("api_mailgun"),
+		auth=("api", Variable.get("api_mailgun")),
 		data={"from": Variable.get("from_mailgun"),
 			"to": "Chris <administrador@sister.cl>",
 			"subject": "Hello Chris",
