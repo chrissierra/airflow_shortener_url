@@ -75,9 +75,11 @@ def requesting_services():
         req = requests.request(method, url, headers=headers, auth=None)
         print(req.status_code)
         print(req)
+        if (req.status_code>299):
+            raise Exception('error en servicios')
         return req
     except requests.exceptions.RequestException as e:  # This is the correct syntax
-        raise SystemExit(e)
+        raise Exception(e)
 
 def service_watcher():    
     try:
