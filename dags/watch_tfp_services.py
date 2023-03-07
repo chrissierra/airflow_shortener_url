@@ -63,7 +63,7 @@ def send_email(subject="TFSP: Servicios funcionando adecuadamente", text="Los se
 
 def requesting_services():
     apikey = Variable.get('apim_prod_apikey')
-    url = 'https://sapim.fppay.com/tfp/app/1.0.0/contents'
+    url = 'https://sapim.fppay.com/tfp/app/1.0.0/contents1'
     headers = {'Accept': 'application/json'}
     
     headers = {
