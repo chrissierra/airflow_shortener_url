@@ -53,7 +53,7 @@ with DAG(
     dag_id='python_operator',
     description='Fisrt dag using python operator',
     schedule_interval='@hourly',
-    start_date=datetime(2022,8,1)
+    start_date=datetime(2023,3,7)
     ) as dag:
     
     t1 = PythonOperator(
