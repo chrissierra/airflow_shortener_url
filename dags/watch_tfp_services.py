@@ -21,6 +21,7 @@ services_list = str(Variable.get("services_to_watch")) # ['https://sapim.fppay.c
 
 def requesting_services():
     for url in services_list.split(','):
+        print(url)
         requesting_service(url)
 
 
