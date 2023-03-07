@@ -62,17 +62,20 @@ def send_email(subject="TFSP: Servicios funcionando adecuadamente", text="Los se
 
 
 def requesting_services():
-    apikey = Variable.get('apim_prod_apikey')
-    url = 'https://sapim.fppay.com/tfp/app/1.0.0/contents1'
-    headers = {'Accept': 'application/json'}
-    
-    headers = {
-        'Accept': 'application/json',
-        'apikey' : f"{apikey}"
-    }
-    method = 'get'
-    req = requests.request(method, url, headers=headers, auth=None)
-    return req
+    try:
+        apikey = Variable.get('apim_prod_apikey')
+        url = 'https://sapim.fppay.com/tfp/app/1.0.0/contents1'
+        headers = {'Accept': 'application/json'}
+        
+        headers = {
+            'Accept': 'application/json',
+            'apikey' : f"{apikey}"
+        }
+        method = 'get'
+        req = requests.request(method, url, headers=headers, auth=None)
+        return req
+    except requests.exceptions.RequestException as e:  # This is the correct syntax
+        raise SystemExit(e)
 
 def service_watcher():    
     try:
