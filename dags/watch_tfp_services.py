@@ -18,7 +18,7 @@ load_dotenv()
 
 
 
-def send_simple_message():
+def send_simple_message2():
     # Creating the respective object along with the gmail login and port number
     smtp_port = SMTP("smtp.gmail.com", 587)
 
@@ -50,7 +50,14 @@ def send_simple_message():
     smtp_port.quit()
 
 
-
+def send_simple_message():
+	return requests.post(
+		Variable.get("url_mailgun"),
+		auth=("api", Variable.get("api_mailgun"),
+		data={"from": Variable.get("from_mailgun"),
+			"to": "Chris <administrador@sister.cl>",
+			"subject": "Hello Chris",
+			"text": "Congratulations Chris, you just sent an email with Mailgun!  You are truly awesome!"})
 
 
 
