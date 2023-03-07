@@ -73,6 +73,8 @@ def requesting_services():
         }
         method = 'get'
         req = requests.request(method, url, headers=headers, auth=None)
+        print(req.status_code)
+        print(req)
         return req
     except requests.exceptions.RequestException as e:  # This is the correct syntax
         raise SystemExit(e)
