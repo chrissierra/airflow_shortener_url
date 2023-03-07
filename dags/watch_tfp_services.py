@@ -52,7 +52,7 @@ def service_watcher():
 with DAG(
     dag_id='python_operator',
     description='Fisrt dag using python operator',
-    schedule_interval='@hourly',
+    schedule_interval='@once',
     start_date=datetime(2022,8,1)
     ) as dag:
     
