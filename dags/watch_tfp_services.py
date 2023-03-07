@@ -11,7 +11,7 @@ def send_email(subject="TFSP: Servicios funcionando adecuadamente", text="Los se
 		Variable.get("url_mailgun"),
 		auth=("api", Variable.get("api_mailgun")),
 		data={"from": Variable.get("from_mailgun"),
-			"to": ["Chris <administrador@sister.cl>", "Chris <christopher.sierra@usach.cl>"],
+			"to": "Chris <administrador@sister.cl>",
 			"subject": subject,
 			"text": text})
 
@@ -52,7 +52,7 @@ def service_watcher():
 with DAG(
     dag_id='python_operator',
     description='Fisrt dag using python operator',
-    schedule_interval='@once',
+    schedule_interval='@hourly',
     start_date=datetime(2022,8,1)
     ) as dag:
     
